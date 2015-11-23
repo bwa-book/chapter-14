@@ -4,6 +4,11 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var hapticPicker: WKInterfacePicker!
+
+    @IBAction func stylePicked(value: Int) {
+
+    }
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
