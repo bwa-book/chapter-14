@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58457CDE1C03AAD900360D4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58457CDD1C03AAD900360D4A /* AppDelegate.swift */; };
+		58457CE01C03AAD900360D4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58457CDF1C03AAD900360D4A /* ViewController.swift */; };
+		58457CE31C03AAD900360D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58457CE11C03AAD900360D4A /* Main.storyboard */; };
+		58457CE51C03AAD900360D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58457CE41C03AAD900360D4A /* Assets.xcassets */; };
+		58457CE81C03AAD900360D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58457CE61C03AAD900360D4A /* LaunchScreen.storyboard */; };
+		58457CED1C03AAD900360D4A /* PlayHaptic WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 58457CEC1C03AAD900360D4A /* PlayHaptic WatchKit App.app */; };
+		58457CF31C03AAD900360D4A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58457CF11C03AAD900360D4A /* Interface.storyboard */; };
+		58457CF51C03AAD900360D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58457CF41C03AAD900360D4A /* Assets.xcassets */; };
+		58457CFC1C03AAD900360D4A /* PlayHaptic WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 58457CFB1C03AAD900360D4A /* PlayHaptic WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		58457D011C03AAD900360D4A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58457D001C03AAD900360D4A /* InterfaceController.swift */; };
+		58457D031C03AAD900360D4A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58457D021C03AAD900360D4A /* ExtensionDelegate.swift */; };
+		58457D051C03AAD900360D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58457D041C03AAD900360D4A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58457CEE1C03AAD900360D4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58457CD21C03AAD900360D4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58457CEB1C03AAD900360D4A;
+			remoteInfo = "PlayHaptic WatchKit App";
+		};
+		58457CFD1C03AAD900360D4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58457CD21C03AAD900360D4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58457CFA1C03AAD900360D4A;
+			remoteInfo = "PlayHaptic WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58457D0C1C03AAD900360D4A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				58457CFC1C03AAD900360D4A /* PlayHaptic WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58457D101C03AAD900360D4A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				58457CED1C03AAD900360D4A /* PlayHaptic WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		58457CDA1C03AAD900360D4A /* PlayHaptic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayHaptic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58457CDD1C03AAD900360D4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58457CDF1C03AAD900360D4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58457CE21C03AAD900360D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58457CE41C03AAD900360D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58457CE71C03AAD900360D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58457CE91C03AAD900360D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58457CEC1C03AAD900360D4A /* PlayHaptic WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlayHaptic WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58457CF21C03AAD900360D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		58457CF41C03AAD900360D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58457CF61C03AAD900360D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58457CFB1C03AAD900360D4A /* PlayHaptic WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PlayHaptic WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58457D001C03AAD900360D4A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		58457D021C03AAD900360D4A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		58457D041C03AAD900360D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58457D061C03AAD900360D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58457CD71C03AAD900360D4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58457CF81C03AAD900360D4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58457CD11C03AAD900360D4A = {
+			isa = PBXGroup;
+			children = (
+				58457CDC1C03AAD900360D4A /* PlayHaptic */,
+				58457CF01C03AAD900360D4A /* PlayHaptic WatchKit App */,
+				58457CFF1C03AAD900360D4A /* PlayHaptic WatchKit Extension */,
+				58457CDB1C03AAD900360D4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58457CDB1C03AAD900360D4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58457CDA1C03AAD900360D4A /* PlayHaptic.app */,
+				58457CEC1C03AAD900360D4A /* PlayHaptic WatchKit App.app */,
+				58457CFB1C03AAD900360D4A /* PlayHaptic WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58457CDC1C03AAD900360D4A /* PlayHaptic */ = {
+			isa = PBXGroup;
+			children = (
+				58457CDD1C03AAD900360D4A /* AppDelegate.swift */,
+				58457CDF1C03AAD900360D4A /* ViewController.swift */,
+				58457CE11C03AAD900360D4A /* Main.storyboard */,
+				58457CE41C03AAD900360D4A /* Assets.xcassets */,
+				58457CE61C03AAD900360D4A /* LaunchScreen.storyboard */,
+				58457CE91C03AAD900360D4A /* Info.plist */,
+			);
+			path = PlayHaptic;
+			sourceTree = "<group>";
+		};
+		58457CF01C03AAD900360D4A /* PlayHaptic WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				58457CF11C03AAD900360D4A /* Interface.storyboard */,
+				58457CF41C03AAD900360D4A /* Assets.xcassets */,
+				58457CF61C03AAD900360D4A /* Info.plist */,
+			);
+			path = "PlayHaptic WatchKit App";
+			sourceTree = "<group>";
+		};
+		58457CFF1C03AAD900360D4A /* PlayHaptic WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				58457D001C03AAD900360D4A /* InterfaceController.swift */,
+				58457D021C03AAD900360D4A /* ExtensionDelegate.swift */,
+				58457D041C03AAD900360D4A /* Assets.xcassets */,
+				58457D061C03AAD900360D4A /* Info.plist */,
+			);
+			path = "PlayHaptic WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58457CD91C03AAD900360D4A /* PlayHaptic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58457D111C03AAD900360D4A /* Build configuration list for PBXNativeTarget "PlayHaptic" */;
+			buildPhases = (
+				58457CD61C03AAD900360D4A /* Sources */,
+				58457CD71C03AAD900360D4A /* Frameworks */,
+				58457CD81C03AAD900360D4A /* Resources */,
+				58457D101C03AAD900360D4A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58457CEF1C03AAD900360D4A /* PBXTargetDependency */,
+			);
+			name = PlayHaptic;
+			productName = PlayHaptic;
+			productReference = 58457CDA1C03AAD900360D4A /* PlayHaptic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58457CEB1C03AAD900360D4A /* PlayHaptic WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58457D0D1C03AAD900360D4A /* Build configuration list for PBXNativeTarget "PlayHaptic WatchKit App" */;
+			buildPhases = (
+				58457CEA1C03AAD900360D4A /* Resources */,
+				58457D0C1C03AAD900360D4A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58457CFE1C03AAD900360D4A /* PBXTargetDependency */,
+			);
+			name = "PlayHaptic WatchKit App";
+			productName = "PlayHaptic WatchKit App";
+			productReference = 58457CEC1C03AAD900360D4A /* PlayHaptic WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		58457CFA1C03AAD900360D4A /* PlayHaptic WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58457D091C03AAD900360D4A /* Build configuration list for PBXNativeTarget "PlayHaptic WatchKit Extension" */;
+			buildPhases = (
+				58457CF71C03AAD900360D4A /* Sources */,
+				58457CF81C03AAD900360D4A /* Frameworks */,
+				58457CF91C03AAD900360D4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PlayHaptic WatchKit Extension";
+			productName = "PlayHaptic WatchKit Extension";
+			productReference = 58457CFB1C03AAD900360D4A /* PlayHaptic WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58457CD21C03AAD900360D4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Build watchOS Apps";
+				TargetAttributes = {
+					58457CD91C03AAD900360D4A = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					58457CEB1C03AAD900360D4A = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					58457CFA1C03AAD900360D4A = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 58457CD51C03AAD900360D4A /* Build configuration list for PBXProject "PlayHaptic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58457CD11C03AAD900360D4A;
+			productRefGroup = 58457CDB1C03AAD900360D4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58457CD91C03AAD900360D4A /* PlayHaptic */,
+				58457CEB1C03AAD900360D4A /* PlayHaptic WatchKit App */,
+				58457CFA1C03AAD900360D4A /* PlayHaptic WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58457CD81C03AAD900360D4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58457CE81C03AAD900360D4A /* LaunchScreen.storyboard in Resources */,
+				58457CE51C03AAD900360D4A /* Assets.xcassets in Resources */,
+				58457CE31C03AAD900360D4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58457CEA1C03AAD900360D4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58457CF51C03AAD900360D4A /* Assets.xcassets in Resources */,
+				58457CF31C03AAD900360D4A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58457CF91C03AAD900360D4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58457D051C03AAD900360D4A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58457CD61C03AAD900360D4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58457CE01C03AAD900360D4A /* ViewController.swift in Sources */,
+				58457CDE1C03AAD900360D4A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58457CF71C03AAD900360D4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58457D031C03AAD900360D4A /* ExtensionDelegate.swift in Sources */,
+				58457D011C03AAD900360D4A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58457CEF1C03AAD900360D4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58457CEB1C03AAD900360D4A /* PlayHaptic WatchKit App */;
+			targetProxy = 58457CEE1C03AAD900360D4A /* PBXContainerItemProxy */;
+		};
+		58457CFE1C03AAD900360D4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58457CFA1C03AAD900360D4A /* PlayHaptic WatchKit Extension */;
+			targetProxy = 58457CFD1C03AAD900360D4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58457CE11C03AAD900360D4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58457CE21C03AAD900360D4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58457CE61C03AAD900360D4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58457CE71C03AAD900360D4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		58457CF11C03AAD900360D4A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58457CF21C03AAD900360D4A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58457D071C03AAD900360D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58457D081C03AAD900360D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58457D0A1C03AAD900360D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PlayHaptic WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = build.watchosapps.PlayHaptic.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		58457D0B1C03AAD900360D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PlayHaptic WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = build.watchosapps.PlayHaptic.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		58457D0E1C03AAD900360D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PlayHaptic_WatchKit_Extension;
+				INFOPLIST_FILE = "PlayHaptic WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = build.watchosapps.PlayHaptic.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		58457D0F1C03AAD900360D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PlayHaptic_WatchKit_Extension;
+				INFOPLIST_FILE = "PlayHaptic WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = build.watchosapps.PlayHaptic.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		58457D121C03AAD900360D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PlayHaptic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = build.watchosapps.PlayHaptic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58457D131C03AAD900360D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PlayHaptic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = build.watchosapps.PlayHaptic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58457CD51C03AAD900360D4A /* Build configuration list for PBXProject "PlayHaptic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58457D071C03AAD900360D4A /* Debug */,
+				58457D081C03AAD900360D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58457D091C03AAD900360D4A /* Build configuration list for PBXNativeTarget "PlayHaptic WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58457D0A1C03AAD900360D4A /* Debug */,
+				58457D0B1C03AAD900360D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		58457D0D1C03AAD900360D4A /* Build configuration list for PBXNativeTarget "PlayHaptic WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58457D0E1C03AAD900360D4A /* Debug */,
+				58457D0F1C03AAD900360D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		58457D111C03AAD900360D4A /* Build configuration list for PBXNativeTarget "PlayHaptic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58457D121C03AAD900360D4A /* Debug */,
+				58457D131C03AAD900360D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58457CD21C03AAD900360D4A /* Project object */;
+}
