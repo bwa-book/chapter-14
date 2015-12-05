@@ -44,6 +44,14 @@ class InterfaceController: WKInterfaceController {
     private func endReadingHeartRate() {
         readingHeartRate = false
     }
+    
+    let healthStore = HKHealthStore()
+    var quantityType: HKQuantityType?
+    var workoutSession: HKWorkoutSession? {
+        didSet {
+            workoutSession?.delegate = self
+        }
+    }
 
 }
 
