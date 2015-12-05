@@ -32,5 +32,11 @@ class InterfaceController: WKInterfaceController {
             }
         }
     }
+    
+    override func didDeactivate() {
+        super.didDeactivate()
+        
+        manager.stopAccelerometerUpdates()
+    }
 
 }
