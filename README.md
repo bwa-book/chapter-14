@@ -5,14 +5,14 @@ Since iPhone SDK was first made available to developers, in 2008, one of the mos
 
 ## Projects
 
-This repository contains three projects:
+This repository contains four projects:
 
-1. ** - This project contains .
-2. ** - This project contains .
-3. *PlayHaptic* - This project contains a small app intended to illustrate the playback of haptic feedback.
+1. *Heartbeat* - This project contains an app to demonstrate how to access heartrate data via the HealthKit APIs.
+2. *Swoosh* - This project is an example of how to access accelerometer data from the device using CoreMotion.
+3. *Mercury* - This project is a further demonstration of using CoreMotion to access the accelerometer, specifically for step measurements.
+4. *PlayHaptic* - This project contains a small app intended to illustrate the playback of haptic feedback.
 
 
 ## Corrections
 
 If you find a mistake in the sample code, please feel free to raise it as an [Issue against this repository](https://github.com/bwa-book/chapter-14/issues).
-
