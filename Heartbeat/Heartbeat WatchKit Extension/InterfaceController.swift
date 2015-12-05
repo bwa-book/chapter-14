@@ -109,6 +109,33 @@ extension InterfaceController: HKWorkoutSessionDelegate {
         }
     }
     
+    private func workoutEnded() {
+        if let query = query {
+            healthStore.stopQuery(query)
+        }
+    }
+    
+    private func workoutStarted() {
+        unit = HKUnit(fromString: "count/min")
+        
+        if queryAnchor == nil {
+            queryAnchor = HKQueryAnchor(fromValue: Int(HKAnchoredObjectQueryNoAnchor))
+        }
+        
+        query = HKAnchoredObjectQuery(
+            type: quantityType!,
+            predicate: nil,
+            anchor: queryAnchor,
+            limit: Int(HKObjectQueryNoLimit),
+            resultsHandler: queryUpdateReceived
+        )
+        
+        if let query = query {
+            query.updateHandler = queryUpdateReceived
+            healthStore.executeQuery(query)
+        }
+    }
+    
     // MARK: HKWorkoutSessionDelegate
     
     func workoutSession(
@@ -117,13 +144,19 @@ extension InterfaceController: HKWorkoutSessionDelegate {
         fromState: HKWorkoutSessionState,
         date: NSDate
     ) {
-        
+        if toState == .Running {
+            workoutStarted()
+        } else {
+            workoutEnded()
+        }
     }
     
     func workoutSession(
         workoutSession: HKWorkoutSession,
         didFailWithError error: NSError
     ) {
-        
+        print(error.description)
+        endReadingHeartRate()
+        label.setText("Error!")
     }
 }
