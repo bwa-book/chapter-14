@@ -37,5 +37,10 @@ class InterfaceController: WKInterfaceController {
             }
         }
     }
+    
+    override func didDeactivate() {
+        super.didDeactivate()
+        pedometer.stopPedometerUpdates()
+    }
 
 }
