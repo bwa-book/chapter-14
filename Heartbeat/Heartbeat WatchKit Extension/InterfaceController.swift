@@ -62,6 +62,41 @@ class InterfaceController: WKInterfaceController {
 
 // MARK: HealthKit access
 extension InterfaceController: HKWorkoutSessionDelegate {
+    
+    private func beginWorkout() {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            updateWithNoAccess()
+            print("HealthKit unavailable")
+            return
+        }
+        
+        quantityType = HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)
+        if let quantityType = quantityType {
+            healthStore.requestAuthorizationToShareTypes(
+                nil,
+                readTypes: Set([quantityType]),
+                completion: accessRequestReturned
+            )
+        } else {
+            updateWithNoAccess()
+            print("No quantity type")
+        }
+    }
+    
+    private func accessRequestReturned(allowed: Bool, error: NSError?) {
+        guard allowed else {
+            updateWithNoAccess()
+            print(error?.description)
+            return
+        }
+        
+        workoutSession = HKWorkoutSession(activityType: .Other, locationType: .Indoor)
+        
+        if let workoutSession = workoutSession {
+            healthStore.startWorkoutSession(workoutSession)
+        }
+    }
+    
     // MARK: HKWorkoutSessionDelegate
     
     func workoutSession(
