@@ -97,6 +97,12 @@ extension InterfaceController: HKWorkoutSessionDelegate {
         }
     }
     
+    private func endWorkout() {
+        if let workoutSession = workoutSession {
+            healthStore.endWorkoutSession(workoutSession)
+        }
+    }
+    
     // MARK: HKWorkoutSessionDelegate
     
     func workoutSession(
