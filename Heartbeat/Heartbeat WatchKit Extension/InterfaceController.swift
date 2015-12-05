@@ -59,6 +59,10 @@ class InterfaceController: WKInterfaceController {
         label.setText("⚠️")
         endReadingHeartRate()
     }
+    
+    var unit: HKUnit?
+    var queryAnchor: HKQueryAnchor?
+    var query: HKAnchoredObjectQuery?
 
 }
 
