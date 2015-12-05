@@ -1,5 +1,6 @@
 import WatchKit
 import Foundation
+import HealthKit
 
 
 class InterfaceController: WKInterfaceController {
@@ -44,4 +45,25 @@ class InterfaceController: WKInterfaceController {
         readingHeartRate = false
     }
 
+}
+
+// MARK: HealthKit access
+extension InterfaceController: HKWorkoutSessionDelegate {
+    // MARK: HKWorkoutSessionDelegate
+    
+    func workoutSession(
+        workoutSession: HKWorkoutSession,
+        didChangeToState toState: HKWorkoutSessionState,
+        fromState: HKWorkoutSessionState,
+        date: NSDate
+    ) {
+        
+    }
+    
+    func workoutSession(
+        workoutSession: HKWorkoutSession,
+        didFailWithError error: NSError
+    ) {
+        
+    }
 }
