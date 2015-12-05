@@ -52,6 +52,11 @@ class InterfaceController: WKInterfaceController {
             workoutSession?.delegate = self
         }
     }
+    
+    private func updateWithNoAccess() {
+        label.setText("⚠️")
+        endReadingHeartRate()
+    }
 
 }
 
