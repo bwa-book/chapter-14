@@ -39,10 +39,12 @@ class InterfaceController: WKInterfaceController {
     
     private func beginReadingHeartRate() {
         readingHeartRate = true
+        beginWorkout()
     }
     
     private func endReadingHeartRate() {
         readingHeartRate = false
+        endWorkout()
     }
     
     let healthStore = HKHealthStore()
