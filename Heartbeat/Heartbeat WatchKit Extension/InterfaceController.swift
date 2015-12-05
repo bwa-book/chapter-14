@@ -136,6 +136,29 @@ extension InterfaceController: HKWorkoutSessionDelegate {
         }
     }
     
+    private func queryUpdateReceived(
+        query: HKAnchoredObjectQuery,
+        samples: [HKSample]?,
+        deletedSamples: [HKDeletedObject]?,
+        updatedAnchor: HKQueryAnchor?,
+        error: NSError?
+    ) {
+        if let updatedAnchor = updatedAnchor {
+            self.queryAnchor = updatedAnchor
+            self.heartRateSamplesReceived(samples)
+        }
+    }
+    
+    private func heartRateSamplesReceived(samples: [HKSample]?) {
+        guard let quantitySamples = samples as? [HKQuantitySample] else { return }
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            guard let sample = quantitySamples.first, unit = self.unit else { return }
+            
+            self.label.setText("\(sample.quantity.doubleValueForUnit(unit))")
+        }
+    }
+    
     // MARK: HKWorkoutSessionDelegate
     
     func workoutSession(
